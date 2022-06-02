@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SmartAirline</title>
+    <link rel="shortcut icon" href="assets/img/icon.jpg" type="image/x-icon">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="" class="logo">Smart<span>Airline</span></a>
+            <ul>
+                <li><a href="#banner" class="active">home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#testimonial">testimonial</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- banner -->
+    <section id="banner">
+        <div class="ban-dark"></div>
+        <div class="ban-content">
+            <h1>Welcome to Smart<span>Airline</span></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate nesciunt harum consequuntur unde eligendi perferendis eos suscipit eius, et incidunt vitae perspiciatis deserunt quae illo, expedita ex voluptas aliquid accusantium?
+            </p>
+            <a href="" class="btn btn-ban">Learn More</a>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services">
+        <div class="intro">
+            our services
+        </div>
+        <div class="container service-container">
+            <div class="card">
+                <i class="fa fa-plane fa-4x"></i>
+                <h3>Departure</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ab iste corporis nulla alias a placeat itaque hic? Enim, laborum.
+            </div>
+            <div class="card">
+                <i class="fa fa-plane-arrival fa-4x"></i>
+                <h3>Arrival</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ab iste corporis nulla alias a placeat itaque hic? Enim, laborum.
+            </div>
+            <div class="card">
+                <i class="fa fa-user fa-4x"></i>
+                <h3>Training</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ab iste corporis nulla alias a placeat itaque hic? Enim, laborum.
+            </div>
+            <div class="card">
+                <i class="fa fa-house fa-4x"></i>
+                <h3>Longue</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ab iste corporis nulla alias a placeat itaque hic? Enim, laborum.
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- testimonial -->
+    <section id="testimonial">
+        <div class="intro">
+            our testimonial
+        </div>
+        <div class="container testi-container">
+            <!-- Swiper -->
+            <div class="swiper smartairline">
+                <div class="swiper-wrapper">
+            
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <img src="/assets/img/man2.jpg" alt="">
+                            <h4>Mr. Smart Airline</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum molestias quas, exercitationem modi id laboriosam omnis. In, necessitatibus quam.
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <img src="/assets/img/smile man.jpg" alt="">
+                            <h4>Mrs. Airline Smart </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum molestias quas, exercitationem modi id laboriosam omnis. In, necessitatibus quam.
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <img src="/assets/img/man2.jpg" alt="">
+                            <h4>Mr.Nathaniel Nosa</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum molestias quas, exercitationem modi id laboriosam omnis. In, necessitatibus quam.
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="swiper-slide">
+                        <div class="slider-content">
+                            <img src="/assets/img/smile man.jpg" alt="">
+                            <h4>Mr. Don't Sleep</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rerum molestias quas, exercitationem modi id laboriosam omnis. In, necessitatibus quam.
+                            </p>
+                        </div>
+                    </div>
+          
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <footer>
+            <a href="" class="logo">Smart<span>Airline</span></a>
+            <ul>
+                <li><a href="#banner" class="active">home</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#testimonial">testimonial</a></li>
+            </ul>
+            <a href="#"><i class="fa fa-arrow-up"></i></a>
+        </footer>
+    </section>
+    
+
+
+  
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".smartairline", {
+            pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        },
+        });
+    </script>
+
+</body>
+</html>
